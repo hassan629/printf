@@ -2,7 +2,12 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
-
+/**
+ * _printf - Prints formatted output to the standard output.
+ * @format: The format string specifying the output format.
+ *
+ * Return: 0
+ */
 int _putchar(char c);
 int _puts(const char *str);
 
@@ -99,13 +104,23 @@ int _printf(const char *format, ...)
 
 	return (printed_chars);
 }
-
+/**
+ * _putchar - Prints a character to the standard output.
+ * @c: The character to be printed.
+ *
+ * Retuen: 1.
+ */
 int _putchar(char c)
 {
 	write(1, &c, 1);
 	return (1);
 }
-
+/**
+ * _puts - Prints a string to the standard output.
+ * @str: The string to be printed.
+ *
+ * Return: print char
+ */
 int _puts(const char *str)
 {
 	int printed_chars = 0;
